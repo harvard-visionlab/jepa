@@ -17,7 +17,7 @@ from src.utils.tensors import (
     trunc_normal_,
     repeat_interleave_batch
 )
-from src.masks.utils import apply_masks
+from jepa.masks.utils import apply_masks
 
 
 class VisionTransformerPredictor(nn.Module):

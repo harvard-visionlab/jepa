@@ -5,7 +5,7 @@
 #
 
 import os
-from setuptools import setup
+from setuptools import setup, find_packages
 
 VERSION = "0.0.1"
 
@@ -21,5 +21,6 @@ if __name__ == "__main__":
         version=VERSION,
         description="JEPA research code.",
         python_requires=">=3.9",
-        install_requires=get_requirements(),
+        packages=find_packages(),
+        # install_requires=get_requirements(),
     )
